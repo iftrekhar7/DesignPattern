@@ -1,8 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+
+using ObserverPattern.ConcreteObserver;
+using ObserverPattern.ConcreteSubject;
+using StrategyPattern.ConcreteStrategy;
+using StrategyPattern.Context;
 
 namespace DesignPattern
 {
@@ -10,6 +11,49 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
+            #region Strategy Pattern
+            //Duck mallardDuck = new MallardDuck();
+            //mallardDuck.PerformQuack();
+            //mallardDuck.PerformFly();
+
+            //Duck modelDuck = new ModeldDuck();
+            //modelDuck.PerformFly();
+            //modelDuck.PerformQuack();
+            //modelDuck.setFlyBhavior(new FlyRocketPowered());// to change behavior at runtime just call setter method
+            //modelDuck.PerformFly();
+
+            //mallardDuck.Display();
+            #endregion
+
+            #region Observer Pattern
+            WeatherData weatherData = new WeatherData();
+
+            CurrentConditionsDisplay currentConditions = new CurrentConditionsDisplay(weatherData);
+
+
+            weatherData.SetMeaserments(32.46f, 65, 30.4f);
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
         }
     }
 }

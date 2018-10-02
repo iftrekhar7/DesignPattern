@@ -1,0 +1,12 @@
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe.config
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DesignPattern.exe
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DesignPattern.pdb
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\StrategyPattern.dll
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\StrategyPattern.pdb
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csprojAssemblyReference.cache
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CoreCompileInputs.cache
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.csproj.CopyComplete
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.exe
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\ObserverPattern.dll
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\ObserverPattern.pdb
