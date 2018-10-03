@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9229BA4B-6022-425A-96C2-F06603343757}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPattern</RootNamespace>
-    <AssemblyName>DesignPattern</AssemblyName>
+    <ProjectGuid>{D3A8ECED-1DAC-4C40-8F91-0F2D0864C9F1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DecoratorPattern</RootNamespace>
+    <AssemblyName>DecoratorPattern</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,25 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Component\Beverage.cs" />
+    <Compile Include="ConcreteComponent\Espresso.cs" />
+    <Compile Include="ConcreteComponent\HouseBlend.cs" />
+    <Compile Include="ConcreteDecorator\Mocha.cs" />
+    <Compile Include="Decorator\CondimentDecorator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DecoratorPattern\DecoratorPattern.csproj">
-      <Project>{d3a8eced-1dac-4c40-8f91-0f2d0864c9f1}</Project>
-      <Name>DecoratorPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ObserverPattern\ObserverPattern.csproj">
-      <Project>{de73591c-726a-404e-a307-5eff1e7f0b48}</Project>
-      <Name>ObserverPattern</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StrategyPattern\StrategyPattern.csproj">
-      <Project>{81cddfb8-b9a4-4c3c-b118-df72abdcc958}</Project>
-      <Name>StrategyPattern</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

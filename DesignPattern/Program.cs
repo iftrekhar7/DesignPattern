@@ -1,9 +1,12 @@
 ﻿
 
+using DecoratorPattern.Component;
+using DecoratorPattern.ConcreteComponent;
 using ObserverPattern.ConcreteObserver;
 using ObserverPattern.ConcreteSubject;
 using StrategyPattern.ConcreteStrategy;
 using StrategyPattern.Context;
+using System;
 
 namespace DesignPattern
 {
@@ -26,15 +29,19 @@ namespace DesignPattern
             #endregion
 
             #region Observer Pattern
-            WeatherData weatherData = new WeatherData();
+            //WeatherData weatherData = new WeatherData();
 
-            CurrentConditionsDisplay currentConditions = new CurrentConditionsDisplay(weatherData);
+            //CurrentConditionsDisplay currentConditions = new CurrentConditionsDisplay(weatherData);
 
 
-            weatherData.SetMeaserments(32.46f, 65, 30.4f);
+           // weatherData.SetMeaserments(32.46f, 65, 30.4f);
             #endregion
 
-            #region 
+            #region Decorator Pattern
+
+            Beverage beverage = new Espresso();
+            Console.WriteLine(beverage.GetDiscription() + " TK-" + beverage.cost());
+            Console.ReadLine();
             #endregion
 
             #region 

@@ -10,3 +10,5 @@ C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.ex
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\obj\Debug\DesignPattern.pdb
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\ObserverPattern.dll
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\ObserverPattern.pdb
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DecoratorPattern.dll
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DecoratorPattern.pdb
