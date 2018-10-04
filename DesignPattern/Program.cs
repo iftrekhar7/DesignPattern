@@ -2,6 +2,9 @@
 
 using DecoratorPattern.Component;
 using DecoratorPattern.ConcreteComponent;
+using FactoryPattern.ConcreteCreator;
+using FactoryPattern.Creator;
+using FactoryPattern.Product;
 using ObserverPattern.ConcreteObserver;
 using ObserverPattern.ConcreteSubject;
 using StrategyPattern.ConcreteStrategy;
@@ -34,33 +37,41 @@ namespace DesignPattern
             //CurrentConditionsDisplay currentConditions = new CurrentConditionsDisplay(weatherData);
 
 
-           // weatherData.SetMeaserments(32.46f, 65, 30.4f);
+            //weatherData.SetMeaserments(32.46f, 65, 30.4f);
             #endregion
 
             #region Decorator Pattern
 
-            Beverage beverage = new Espresso();
-            Console.WriteLine(beverage.GetDiscription() + " TK-" + beverage.cost());
+            //Beverage beverage = new Espresso();
+            //Console.WriteLine(beverage.GetDiscription() + " TK-" + beverage.cost());
+            //Console.ReadLine();
+
+            #endregion Factory Pattern
+
+            PizzaStore nyPizzaStore = new NYPizzaStore();
+            Pizza pizza = nyPizzaStore.Orderpizza("Cheese");
+            Console.WriteLine("Iftekhar odered a " + pizza.Name);
+
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
+            #region 
+            #endregion
+
             Console.ReadLine();
-            #endregion
-
-            #region 
-            #endregion
-
-            #region 
-            #endregion
-
-            #region 
-            #endregion
-
-            #region 
-            #endregion
-
-            #region 
-            #endregion
-
-            #region 
-            #endregion
         }
     }
 }
