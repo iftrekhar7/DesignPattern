@@ -1,10 +1,8 @@
-﻿
-
-using DecoratorPattern.Component;
+﻿using DecoratorPattern.Component;
 using DecoratorPattern.ConcreteComponent;
-using FactoryPattern.ConcreteCreator;
-using FactoryPattern.Creator;
-using FactoryPattern.Product;
+using FactoryPattern.AbstractFactory.Pizza;
+using FactoryPattern.AbstractProduct.Pizza;
+using FactoryPattern.ConcreteFactory.Pizza;
 using ObserverPattern.ConcreteObserver;
 using ObserverPattern.ConcreteSubject;
 using StrategyPattern.ConcreteStrategy;
@@ -49,9 +47,7 @@ namespace DesignPattern
             #endregion Factory Pattern
 
             PizzaStore nyPizzaStore = new NYPizzaStore();
-            Pizza pizza = nyPizzaStore.Orderpizza("Cheese");
-            Console.WriteLine("Iftekhar odered a " + pizza.Name);
-
+            ProductPizza pizza = nyPizzaStore.Orderpizza("Cheese");
 
             #region 
             #endregion
