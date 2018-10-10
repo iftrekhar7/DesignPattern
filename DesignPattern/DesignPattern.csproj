@@ -44,6 +44,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Adapter Pattern\Adapter_Pattern.csproj">
+      <Project>{DBD5625F-1239-4BAA-8F4E-6DAD8889032B}</Project>
+      <Name>Adapter_Pattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CommandPattern\CommandPattern.csproj">
       <Project>{42837DAB-7917-4483-A7D3-7D0846A90B49}</Project>
       <Name>CommandPattern</Name>

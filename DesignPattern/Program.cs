@@ -1,4 +1,8 @@
-﻿using CommandPattern.Command;
+﻿using Adapter_Pattern.Adapter;
+using Adapter_Pattern.ConcreteTarget;
+using Adapter_Pattern.CongreteAdaptee;
+using Adapter_Pattern.Target;
+using CommandPattern.Command;
 using CommandPattern.ConcreteCommand;
 using CommandPattern.Invoker;
 using CommandPattern.Receiver;
@@ -48,11 +52,14 @@ namespace DesignPattern
             //Console.WriteLine(beverage.GetDiscription() + " TK-" + beverage.cost());
             //Console.ReadLine();
 
-            #endregion Factory Pattern
+            #endregion 
 
+            #region Factory Pattern
+           
             //PizzaStore nyPizzaStore = new NYPizzaStore();
             //ProductPizza pizza = nyPizzaStore.Orderpizza("Cheese");
 
+            #endregion
 
             #region Command Pattern
 
@@ -139,22 +146,37 @@ namespace DesignPattern
             remoteControl.SetCommand(0, partyOnMacro, partyOffMacro);
 
 
-            Console.WriteLine(remoteControl);
-            Console.WriteLine("----Pushing Macro On----");
-            remoteControl.OnButtonWasPushed(0);
-            Console.WriteLine("----Pushing Macro Off----");
-            remoteControl.OffButtonWasPushed(0);
-            Console.WriteLine("----Pushing Macro Undo----");
-            remoteControl.undoButtonWasPushed();
+            //Console.WriteLine(remoteControl);
+            //Console.WriteLine("----Pushing Macro On----");
+            //remoteControl.OnButtonWasPushed(0);
+            //Console.WriteLine("----Pushing Macro Off----");
+            //remoteControl.OffButtonWasPushed(0);
+            //Console.WriteLine("----Pushing Macro Undo----");
+            //remoteControl.undoButtonWasPushed();
             #endregion
 
 
             #endregion
 
-            #region 
+            #region Adapter Pattern
+            MallaDuck duck = new MallaDuck();
+
+            WildTurkey wildTurkey = new WildTurkey();
+
+            IDuck turkeyAdapter = new TurkeyAdapter(wildTurkey);
+
+            Console.WriteLine("The Turkey Says...");
+            wildTurkey.Gobble();
+            wildTurkey.Fly();
+
+            Console.WriteLine("\n The Duck Says...");
+            testDuck(duck);
+
+            Console.WriteLine("\n The TurkeyAdapter Says...");
+            testDuck(turkeyAdapter);
             #endregion
-            #region 
-            #endregion
+
+
             #region 
             #endregion
             #region 
@@ -173,6 +195,11 @@ namespace DesignPattern
             #endregion
 
             Console.ReadLine();
+        }
+        static void testDuck(IDuck duck)
+        {
+            duck.Quack();
+            duck.Fly();
         }
     }
 }
