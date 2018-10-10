@@ -1,0 +1,6 @@
+C:\Users\apl\source\repos\DesignPattern\CommandPattern\bin\Debug\CommandPattern.dll
+C:\Users\apl\source\repos\DesignPattern\CommandPattern\bin\Debug\CommandPattern.pdb
+C:\Users\apl\source\repos\DesignPattern\CommandPattern\obj\Debug\CommandPattern.csprojAssemblyReference.cache
+C:\Users\apl\source\repos\DesignPattern\CommandPattern\obj\Debug\CommandPattern.csproj.CoreCompileInputs.cache
+C:\Users\apl\source\repos\DesignPattern\CommandPattern\obj\Debug\CommandPattern.dll
+C:\Users\apl\source\repos\DesignPattern\CommandPattern\obj\Debug\CommandPattern.pdb

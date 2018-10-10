@@ -14,3 +14,5 @@ C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DecoratorPattern
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\DecoratorPattern.pdb
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\FactoryPattern.dll
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\FactoryPattern.pdb
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\CommandPattern.dll
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\CommandPattern.pdb
