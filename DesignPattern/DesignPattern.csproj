@@ -56,6 +56,10 @@
       <Project>{d3a8eced-1dac-4c40-8f91-0f2d0864c9f1}</Project>
       <Name>DecoratorPattern</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FacadePattern\FacadePattern.csproj">
+      <Project>{E33A6C95-7C6F-493B-9ACF-CA4EFA701E2D}</Project>
+      <Name>FacadePattern</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FactoryPattern\FactoryPattern.csproj">
       <Project>{7cc1de46-b8cc-4918-b7ad-7136cd9beb91}</Project>
       <Name>FactoryPattern</Name>

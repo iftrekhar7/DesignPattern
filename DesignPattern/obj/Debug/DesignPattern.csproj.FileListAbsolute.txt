@@ -18,3 +18,5 @@ C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\CommandPattern.d
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\CommandPattern.pdb
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\Adapter Pattern.dll
 C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\Adapter Pattern.pdb
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\FacadePattern.dll
+C:\Users\apl\source\repos\DesignPattern\DesignPattern\bin\Debug\FacadePattern.pdb

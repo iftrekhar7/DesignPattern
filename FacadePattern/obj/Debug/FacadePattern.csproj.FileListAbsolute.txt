@@ -1,0 +1,6 @@
+C:\Users\apl\source\repos\DesignPattern\FacadePattern\bin\Debug\FacadePattern.dll
+C:\Users\apl\source\repos\DesignPattern\FacadePattern\bin\Debug\FacadePattern.pdb
+C:\Users\apl\source\repos\DesignPattern\FacadePattern\obj\Debug\FacadePattern.csprojAssemblyReference.cache
+C:\Users\apl\source\repos\DesignPattern\FacadePattern\obj\Debug\FacadePattern.csproj.CoreCompileInputs.cache
+C:\Users\apl\source\repos\DesignPattern\FacadePattern\obj\Debug\FacadePattern.dll
+C:\Users\apl\source\repos\DesignPattern\FacadePattern\obj\Debug\FacadePattern.pdb

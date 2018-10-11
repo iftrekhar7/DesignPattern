@@ -8,6 +8,8 @@ using CommandPattern.Invoker;
 using CommandPattern.Receiver;
 using DecoratorPattern.Component;
 using DecoratorPattern.ConcreteComponent;
+using FacadePattern.Facade;
+using FacadePattern.SubSystems;
 using FactoryPattern.AbstractFactory.Pizza;
 using FactoryPattern.AbstractProduct.Pizza;
 using FactoryPattern.ConcreteFactory.Pizza;
@@ -159,26 +161,44 @@ namespace DesignPattern
             #endregion
 
             #region Adapter Pattern
-            MallaDuck duck = new MallaDuck();
+            //MallaDuck duck = new MallaDuck();
 
-            WildTurkey wildTurkey = new WildTurkey();
+            //WildTurkey wildTurkey = new WildTurkey();
 
-            IDuck turkeyAdapter = new TurkeyAdapter(wildTurkey);
+            //IDuck turkeyAdapter = new TurkeyAdapter(wildTurkey);
 
-            Console.WriteLine("The Turkey Says...");
-            wildTurkey.Gobble();
-            wildTurkey.Fly();
+            //Console.WriteLine("The Turkey Says...");
+            //wildTurkey.Gobble();
+            //wildTurkey.Fly();
 
-            Console.WriteLine("\n The Duck Says...");
-            testDuck(duck);
+            //Console.WriteLine("\n The Duck Says...");
+            //testDuck(duck);
 
-            Console.WriteLine("\n The TurkeyAdapter Says...");
-            testDuck(turkeyAdapter);
+            //Console.WriteLine("\n The TurkeyAdapter Says...");
+            //testDuck(turkeyAdapter);
+            #endregion
+
+            #region Facade Pattern
+
+            Amplifier amp = new Amplifier();
+            var tuner = new Tuner();
+            DvdPlayer dvdPlayer = new DvdPlayer();
+            CdPlayer cdPlayer = new CdPlayer();
+            Projector projector = new Projector();
+            TheaterLights theaterLights = new TheaterLights();
+            Screen screen = new Screen();
+            PopcornPopper popper = new PopcornPopper();
+            TheaterLights light = new TheaterLights();
+
+
+            HomeTheaterFacade theaterFacade = new HomeTheaterFacade( tuner, amp, dvdPlayer, cdPlayer, projector, light, screen, popper);
+            theaterFacade.WatchMovies("BatMan");
+            Console.WriteLine("-------------------------");
+            theaterFacade.EndMovie();
+
             #endregion
 
 
-            #region 
-            #endregion
             #region 
             #endregion
 
