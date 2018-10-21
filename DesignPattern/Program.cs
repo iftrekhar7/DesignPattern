@@ -18,6 +18,7 @@ using ObserverPattern.ConcreteSubject;
 using StrategyPattern.ConcreteStrategy;
 using StrategyPattern.Context;
 using System;
+using TemplateMethodPattern.Concrete;
 
 namespace DesignPattern
 {
@@ -180,26 +181,30 @@ namespace DesignPattern
 
             #region Facade Pattern
 
-            Amplifier amp = new Amplifier();
-            var tuner = new Tuner();
-            DvdPlayer dvdPlayer = new DvdPlayer();
-            CdPlayer cdPlayer = new CdPlayer();
-            Projector projector = new Projector();
-            TheaterLights theaterLights = new TheaterLights();
-            Screen screen = new Screen();
-            PopcornPopper popper = new PopcornPopper();
-            TheaterLights light = new TheaterLights();
+            //Amplifier amp = new Amplifier();
+            //var tuner = new Tuner();
+            //DvdPlayer dvdPlayer = new DvdPlayer();
+            //CdPlayer cdPlayer = new CdPlayer();
+            //Projector projector = new Projector();
+            //TheaterLights theaterLights = new TheaterLights();
+            //Screen screen = new Screen();
+            //PopcornPopper popper = new PopcornPopper();
+            //TheaterLights light = new TheaterLights();
 
 
-            HomeTheaterFacade theaterFacade = new HomeTheaterFacade( tuner, amp, dvdPlayer, cdPlayer, projector, light, screen, popper);
-            theaterFacade.WatchMovies("BatMan");
-            Console.WriteLine("-------------------------");
-            theaterFacade.EndMovie();
+            //HomeTheaterFacade theaterFacade = new HomeTheaterFacade( tuner, amp, dvdPlayer, cdPlayer, projector, light, screen, popper);
+            //theaterFacade.WatchMovies("BatMan");
+            //Console.WriteLine("-------------------------");
+            //theaterFacade.EndMovie();
 
             #endregion
 
 
-            #region 
+            #region Template Method Pattern
+
+            Tea tea = new Tea();
+            tea.PrepareRecipe();
+
             #endregion
 
             #region 

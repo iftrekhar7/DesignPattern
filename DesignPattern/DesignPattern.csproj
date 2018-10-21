@@ -72,6 +72,10 @@
       <Project>{81cddfb8-b9a4-4c3c-b118-df72abdcc958}</Project>
       <Name>StrategyPattern</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TemplateMethodPattern\TemplateMethodPattern.csproj">
+      <Project>{E31AFE00-D470-422E-BF19-F007B3F17345}</Project>
+      <Name>TemplateMethodPattern</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
